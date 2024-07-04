@@ -62,7 +62,7 @@ const FirstPage: React.FC = () => {
             setPhone(input);
           }}
           margin="normal"
-          placeholder="Enter your phone number"
+          placeholder="Enter your phone number (Type only numeric character)"
         />
         <TextField
           label="Email"
