@@ -57,7 +57,10 @@ const FirstPage: React.FC = () => {
           variant="outlined"
           fullWidth
           value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+           onChange={(e) => {
+            const input = e.target.value.replace(/\D/g, '');
+            setPhone(input);
+          }}
           margin="normal"
           placeholder="Enter your phone number"
         />
